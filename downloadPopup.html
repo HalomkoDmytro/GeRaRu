@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script>
+      function runScriptAndClose() {
+        google.script.run.withSuccessHandler(function() {
+          google.script.host.close(); // Close the popup
+        }).runMyScript(); // Call server-side script
+      }
+    </script>
+  </head>
+  <body>
+    <a href="" target="_blank" download/>
+  </body>
+</html>
