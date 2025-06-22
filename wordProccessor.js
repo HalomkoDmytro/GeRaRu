@@ -4,7 +4,7 @@ function createRaport(data) {
 
 function createWordDocument(data) {
   try {
-    const doc = DocumentApp.create(`2 АЕМБ Рапорт рух особового складу в районі виконання завдання за ${getSimpleDate()}`);
+    const doc = DocumentApp.create(` Рапорт рух особового складу в районі виконання завдання за ${getSimpleDate()}`);
     const body = doc.getBody();
     body.clear();
 
@@ -178,9 +178,7 @@ function appendHeader(body) {
 function appendFooter(body) {
   const lines = [
     '', '', '',
-    'Командир 2 аеромобільного батальйону',
-    'військової частини А4350',
-    'майор                                                                              Олекзандр ЗАДОРОЖНІЙ',
+                                                                            ',
     `${getSimpleDate()}`
   ];
 
